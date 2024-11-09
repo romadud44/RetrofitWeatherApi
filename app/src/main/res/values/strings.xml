@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RetrofitWeatherApi</string>
+    <string name="api_key">5c02b97b663133756539d16e403477c0</string>
+    <string name="text_toolbar_main">Погода</string>
+    <string name="text_menu_exit">Выход</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_viewpager_text">текст...</string>
+    <string name="text_viewpager_start">Начать!</string>
+    <string name="text_simple">Москва...</string>
+    <string name="text_input_city">Введите город</string>
+    <string name="text_go_weather">Получить данные</string>
+    <string name="text_city_TV">Город</string>
+    <string name="text_temp_TV">Температура</string>
+    <string name="text_wind_speed_TV">Скорость</string>
+    <string name="text_wind_degree_TV">Направление</string>
+    <string name="text_pressure_TV">Атмосферное давление</string>
+    <string name="text_humidity_TV">Влажность</string>
+    <string name="text_min_temp_TV">Минимальная температура</string>
+    <string name="text_max_temp_TV">Максимальная температура</string>
+    <string name="text_no_data_TV">----------</string>
+</resources>

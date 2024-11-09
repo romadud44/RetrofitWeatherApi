@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".StartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/text_toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarStart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_input_city"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp" />
+
+            <EditText
+                android:id="@+id/inputCityET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/text_simple"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goWeatherBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_go_weather"
+            android:textSize="@dimen/_20sp" />
+
+        <TextView
+            android:id="@+id/cityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/text_city_TV"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temperatureTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/text_temp_TV"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_24sp" />
+
+        <ImageView
+            android:id="@+id/weatherIV"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="@dimen/_200dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_sun" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_wind_degree_TV"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_wind_speed_TV"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/windDegreeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_no_data_TV"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/windSpeedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_no_data_TV"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_pressure_TV"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_humidity_TV"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pressureTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_no_data_TV"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/humidityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_no_data_TV"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_max_temp_TV"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_min_temp_TV"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/maxTempTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_no_data_TV"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/minTempTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_no_data_TV"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
